@@ -47,6 +47,17 @@ Now you need to run the migration, I suggest to migrate with the seeder. Or if y
 ```
 php artisan migrate --seed
 ```
+Finally, you can use the `role` middleware in your routes like this example below:
+```php
+...
+Route::group(['middleware' => ['auth', 'role:admin']], function () {
+    
+});
+
+Route::group(['middleware' => ['auth', 'role:user']], function () {
+    
+});
+```
 
 ### Notes
 - On the roles table migration file, there is a default value to assign the role to registered user. You can adjust it to your need.
