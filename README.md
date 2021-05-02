@@ -3,6 +3,10 @@
 # Fortify Role
 Basic Multi Roles authentication package for Fortify.
 
+[![GitHub license](https://img.shields.io/github/license/akunbeben/fortify-role?style=for-the-badge)](https://github.com/akunbeben/fortify-role/blob/master/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akunbeben/fortify-role/tests?style=for-the-badge)](https://github.com/akunbeben/fortify-role)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/akunbeben/fortify-role?label=version&style=for-the-badge)](https://github.com/akunbeben/fortify-role)
+
 ## Requirement
 - Laravel ^8.x
 - Laravel/Fortify ^1.x
