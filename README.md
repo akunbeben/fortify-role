@@ -44,6 +44,9 @@ class User extends Authenticatable
 }
 ```
 Now you need to run the migration, I suggest to migrate with the seeder. Or if you want to modify the seeder you can find the seeder file on `database/seeders/RoleSeeder.php` and `database/seeders/UserSeeder.php`
+```
+php artisan migrate
+```
 
 ### Notes
 - On the roles table migration file, there is a default value to assign the role to registered user. You can adjust it to your need.
