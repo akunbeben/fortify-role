@@ -20,6 +20,9 @@ jobs:
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
     steps:
+      - name: Install Dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -37,4 +40,4 @@ jobs:
           coverage: none
 
       - name: Execute tests
-        run: vendor/bin/phpunit --verbose
+        run: ./vendor/bin/phpunit --verbose
