@@ -21,7 +21,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'user',
-                'redirect_to' => '/'
+                'redirect_to' => '/home'
             ],
         ];
 
