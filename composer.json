@@ -1,6 +1,6 @@
 {
     "name": "akunbeben/fortify-role",
-    "description": "Multi Roles authentication package for Fortify.",
+    "description": "Basic Multi Roles authentication package for Fortify.",
     "type": "library",
     "license": "MIT",
     "authors": [
