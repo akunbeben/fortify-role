@@ -1,0 +1,39 @@
+{
+    "name": "akunbeben/fortify-role",
+    "description": "Multi Roles authentication package for Fortify.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benny Rahmat",
+            "email": "akunbeben@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Akunbeben\\FortifyRole\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Akunbeben\\FortifyRole\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/fortify": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.17",
+        "mockery/mockery": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akunbeben\\FortifyRole\\FortifyRoleServiceProvider"
+            ]
+        }
+    }
+}
