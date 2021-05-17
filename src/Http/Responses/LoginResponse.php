@@ -2,7 +2,6 @@
 
 namespace App\Http\Responses;
 
-use App\Models\Role;
 use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
 
 class LoginResponse implements LoginResponseContract
@@ -16,12 +15,6 @@ class LoginResponse implements LoginResponseContract
     
     private function redirect()
     {
-        $roles = Role::all();
-        foreach ($roles as $role) 
-        {
-            if (auth()->user()->role_id == $role->id) {
-                return redirect($role->redirect_to);
-            }
-        }
+        return redirect(auth()->user()->role->redirect_to);
     }
 }
